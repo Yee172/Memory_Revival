@@ -4,3 +4,5 @@ Prime/source/raw/Prime_Palindromes.txt
 PI/sources/raw/pi.txt
 Prime/source/raw/prime.txt
 Prime/source/raw/Separator.py
+/.idea
+*.pyc
