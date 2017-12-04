@@ -10,13 +10,16 @@ from PyQt5.QtCore import Qt
 from GUI.maindialog import Ui_Dialog
 
 app = QtWidgets.QApplication(sys.argv)
+PATH = sys.path[1]
+with open(PATH + '/PI/sources/raw/pi.txt', 'r') as f:
+    text = f.read()
 
 
-class MainWin(QtWidgets.QWidget, Ui_Dialog):
+class MainWin(QtWidgets.QDialog, Ui_Dialog):
     def __init__(self):
         super(MainWin, self).__init__()
         self.setupUi(self)
-
+        self.showing_browser.setText(text)
         self.show()
 
     def keyPressEvent(self, QKeyEvent):
