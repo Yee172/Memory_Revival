@@ -4,6 +4,9 @@ __author__ = 'Yee_172'
 __date__ = '2017/12/03'
 
 
+import sys
+PATH = sys.path[0][:-4]
+sys.path.append(PATH)
 from src.Func import *
 
 
